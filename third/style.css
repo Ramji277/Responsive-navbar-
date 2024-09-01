@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+:root{
+    --body-color:#e4e9f7;
+    --nav-color:#4070f4;
+    --side-nav:#010718;
+    --text-color:#fff;
+    --search-bar:#f2f2f2;
+    --search-text:#010718;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image:url(image.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+    
+}
+.img{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: var(--nav-color);
+}
+
+header .nav-bar{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar .nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .nav-links li{
+    list-style: none;
+    margin-right: 17px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400px;
+    color: var(--text-color);
+    padding: 10px;
+    cursor: pointer;
+}
+
+header .nav-bar .logo a{
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 255);
+    display: flex;
+    border-radius: 60px;
+    align-items: center;
+    padding: 8px 20px;
+    margin-top: 150px;
+}
+
+.search-bar input{
+    background: transparent;
+    border: none;
+    flex: 1;
+    outline: none;
+    font-size: 15px;
+    color: black;
+    margin: 10px;
+}
+.search-bar i{
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: #58629b;
+    cursor: pointer;
+    padding: 8px 0 0 8px;
+}
+
+.search-bar .search-icon{
+    align-items: center;
+    color: #fff;
+    justify-items: center;
+    font-size: 25px;
+}
